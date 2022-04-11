@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+		<HEAD>
+			<TITLE>MY CHITKARA UNIVERSITY</TITLE>
+		</HEAD>
+		<!--LINKS-->
+		<!--EXTERNAL LINK-anchor-->
+		<!--href options: relative url, absolute url, mailto:, #id(internal)-->
+		<!--target option: _blank, _self, _parent, _top-->
+		<BODY>
+			<h1>Validate pattern!!!</h1>
+			<input type="text" id="i1" onkeyup="abc()">
+			<button onclick="abc()">validate</button>
+			<span id="s1"></span>
+			<script>
+				function abc(){
+						var a=document.getElementById("i1").value;
+						var p=/^[0-9]+$/;
+						if(p.test(a))
+						{
+							document.getElementById("s1").innerHTML="OK";
+							
+						}
+						else
+						{
+							document.getElementById("s1").innerHTML="NOT OK!!";
+						}
+				
+				}
+				
+			</script>
+		</BODY>
+</HTML>
+
